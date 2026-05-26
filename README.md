@@ -63,9 +63,9 @@ Satu siklus penuh melayani seorang pelanggan terdiri dari lima tahap:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    ALUR SATU HARI                        │
+│                    ALUR SATU HARI                       │
 │                                                         │
-│  [Lobby] ──► [Dialog] ──► [Menggambar] ──► [Mewarnai]  │
+│  [Lobby] ──► [Dialog] ──► [Menggambar] ──► [Mewarnai]   │
 │     ▲                                          │        │
 │     └──────────── [Menjemur] ◄─────────────────┘        │
 │                       │                                 │
