@@ -4,7 +4,7 @@
 
 ### Game Desktop — Unity 2021 | Batik Crafting Simulation
 
-[![Unity](https://img.shields.io/badge/Unity-2021%20LTS-black?style=for-the-badge&logo=unity)](https://unity.com/)
+[![Unity](https://img.shields.io/badge/Unity-2022%20LTS-black?style=for-the-badge&logo=unity)](https://unity.com/)
 [![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/csharp/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Mac%20%7C%20Linux-blue?style=for-the-badge)](https://unity.com/)
 [![Status](https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge)]()
