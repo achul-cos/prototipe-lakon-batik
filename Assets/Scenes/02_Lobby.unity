@@ -122,7 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &15081324
+--- !u!1 &33898853
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,30 +130,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 15081325}
+  - component: {fileID: 33898855}
+  - component: {fileID: 33898854}
   m_Layer: 0
-  m_Name: Lobby
+  m_Name: LobbyUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &15081325
+--- !u!114 &33898854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33898853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c055b353e89f054cb1a97981cd83689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayText: {fileID: 1464644041}
+  weatherText: {fileID: 1081620059}
+  forecastText: {fileID: 1500529603}
+  customerCounterText: {fileID: 1018172632}
+  moneyText: {fileID: 673045033}
+  timeText: {fileID: 1272568300}
+  shopHoursText: {fileID: 1430763487}
+  weatherIcons:
+  - {fileID: 21300000, guid: 35aa311dfc7036144a31916b8b4ee8be, type: 3}
+  - {fileID: 21300000, guid: d1fe14d57f9ca5f408c02d00c273cd3d, type: 3}
+  - {fileID: 21300000, guid: 0059ed4f54967334d8f618ca0e531100, type: 3}
+  - {fileID: 21300000, guid: 336f918959745824d8be9cdf448fea9f, type: 3}
+  - {fileID: 21300000, guid: 33ff4298fa1cd664c92f09eb6da80c5d, type: 3}
+  weatherIconImage: {fileID: 1263010527}
+  forecastIconImage: {fileID: 1183759656}
+  shopClosingNoticePanel: {fileID: 1421063455}
+  closingNoticeDuration: 4
+  endOfDayPanel: {fileID: 349055864}
+  endOfDaySummaryText: {fileID: 2121779538}
+  btnNextDay: {fileID: 1202277445}
+--- !u!4 &33898855
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 15081324}
+  m_GameObject: {fileID: 33898853}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5334366, y: 1.7021703, z: 5.3525553}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 920.0293, y: 510.08752, z: -0.60989475}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1236549641}
-  - {fileID: 751053572}
-  - {fileID: 610968555}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &147265050
@@ -731,94 +761,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &444551181
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 444551184}
-  - component: {fileID: 444551183}
-  - component: {fileID: 444551182}
-  m_Layer: 0
-  m_Name: LobbyManagers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &444551182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444551181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c055b353e89f054cb1a97981cd83689, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dayText: {fileID: 1464644041}
-  weatherText: {fileID: 1081620059}
-  forecastText: {fileID: 1500529603}
-  customerCounterText: {fileID: 1018172632}
-  moneyText: {fileID: 673045033}
-  timeText: {fileID: 1272568300}
-  shopHoursText: {fileID: 1430763487}
-  weatherIcons:
-  - {fileID: 21300000, guid: 35aa311dfc7036144a31916b8b4ee8be, type: 3}
-  - {fileID: 21300000, guid: d1fe14d57f9ca5f408c02d00c273cd3d, type: 3}
-  - {fileID: 21300000, guid: 0059ed4f54967334d8f618ca0e531100, type: 3}
-  - {fileID: 21300000, guid: 336f918959745824d8be9cdf448fea9f, type: 3}
-  - {fileID: 21300000, guid: 33ff4298fa1cd664c92f09eb6da80c5d, type: 3}
-  weatherIconImage: {fileID: 1263010527}
-  forecastIconImage: {fileID: 1183759656}
-  shopClosingNoticePanel: {fileID: 1421063455}
-  closingNoticeDuration: 4
-  endOfDayPanel: {fileID: 349055864}
-  endOfDaySummaryText: {fileID: 2121779538}
-  btnNextDay: {fileID: 1202277445}
---- !u!114 &444551183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444551181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052a6100fffea134fbe10963a21f6eb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitingChairs:
-  - {fileID: 1236549641}
-  - {fileID: 751053572}
-  - {fileID: 610968555}
-  customerPrefab: {fileID: 846058094119230228, guid: 3f0465a675422a84cb83b02a9888d489, type: 3}
-  orderTemplates:
-  - customerName: Pak Berni
-    backStory: Dosen Polibatam
-    desiredPattern: {fileID: 11400000, guid: 55377a1ba1036e34282fe8c4b3b6d1c0, type: 2}
-    desiredColor: 0
-    requestDialog: '"Gw mau batik Bunga warna Merah. Dah itu aja."'
---- !u!4 &444551184
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444551181}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7312812, y: 3.0101614, z: -0.04328527}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &528119523
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,12 +920,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610968554}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.01, y: -4.11, z: -5.3525553}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -915.48584, y: -512.49536, z: 0.60989475}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 15081325}
+  m_Father: {fileID: 998667230}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &610968556
 SpriteRenderer:
@@ -1305,6 +1247,108 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &703181874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 703181875}
+  - component: {fileID: 703181878}
+  - component: {fileID: 703181877}
+  - component: {fileID: 703181876}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &703181875
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703181874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1727995349}
+  m_Father: {fileID: 1157828212}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &703181876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703181874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &703181877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703181874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &703181878
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703181874}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 2
+  m_TargetDisplay: 0
 --- !u!1 &704707614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,12 +1508,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751053571}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.97, y: -4.11, z: -5.3525553}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -917.5259, y: -512.49536, z: 0.60989475}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 15081325}
+  m_Father: {fileID: 998667230}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &751053573
 SpriteRenderer:
@@ -1842,6 +1886,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958629001}
   m_CullTransparentMesh: 1
+--- !u!1 &998667228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 998667230}
+  - component: {fileID: 998667229}
+  m_Layer: 0
+  m_Name: CustomerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &998667229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998667228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052a6100fffea134fbe10963a21f6eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitingChairs:
+  - {fileID: 1236549641}
+  - {fileID: 751053572}
+  - {fileID: 610968555}
+  customerPrefab: {fileID: 846058094119230228, guid: 3f0465a675422a84cb83b02a9888d489, type: 3}
+  orderTemplates:
+  - customerName: Pak Berni
+    backStory: Dosen Polibatam
+    desiredPattern: {fileID: 11400000, guid: 55377a1ba1036e34282fe8c4b3b6d1c0, type: 2}
+    desiredColor: 0
+    requestDialog: '"Gw mau batik Bunga warna Merah. Dah itu aja."'
+--- !u!4 &998667230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998667228}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 920.0293, y: 510.08752, z: -0.60989475}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1157828212}
+  - {fileID: 1236549641}
+  - {fileID: 751053572}
+  - {fileID: 610968555}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1004947046
 GameObject:
   m_ObjectHideFlags: 0
@@ -2546,12 +2649,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157828210}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -920.0293, y: -510.08752, z: 0.60989475}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Children:
+  - {fileID: 703181875}
+  m_Father: {fileID: 998667230}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1179907808
 GameObject:
@@ -2908,12 +3012,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236549640}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.034, y: -4.11, z: -5.3525553}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -919.52985, y: -512.49536, z: 0.60989475}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 15081325}
+  m_Father: {fileID: 998667230}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1236549642
 SpriteRenderer:
@@ -3888,7 +3992,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727995348}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3900,7 +4004,7 @@ RectTransform:
   - {fileID: 1004947050}
   - {fileID: 402712181}
   - {fileID: 704707615}
-  m_Father: {fileID: 2087921782}
+  m_Father: {fileID: 703181875}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4331,7 +4435,6 @@ RectTransform:
   - {fileID: 779424469}
   - {fileID: 349055865}
   - {fileID: 1421063456}
-  - {fileID: 1727995349}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4677,6 +4780,5 @@ SceneRoots:
   - {fileID: 147265053}
   - {fileID: 2087921782}
   - {fileID: 1902287212}
-  - {fileID: 15081325}
-  - {fileID: 444551184}
-  - {fileID: 1157828212}
+  - {fileID: 33898855}
+  - {fileID: 998667230}

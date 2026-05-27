@@ -139,10 +139,10 @@ public class DryingManager : Singleton<DryingManager>
         float lo = idealTime - idealWindow;
         float hi = idealTime + idealWindow;
 
-        if (t < lo) statusLabel.text = "💧 Masih basah";
-        else if (t <= hi) statusLabel.text = "✨ Kering sempurna!";
-        else if (t < maxDryTime * 0.85f) statusLabel.text = "⚠️ Terlalu lama";
-        else statusLabel.text = "🔥 Pudar terbakar matahari";
+        if (t < lo) statusLabel.text = "Masih basah";
+        else if (t <= hi) statusLabel.text = "Kering sempurna!";
+        else if (t < maxDryTime * 0.85f) statusLabel.text = "Terlalu lama";
+        else statusLabel.text = "Pudar terbakar matahari";
     }
 
     /// <summary>

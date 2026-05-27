@@ -23,7 +23,7 @@ public class BatikDrawingManager : Singleton<BatikDrawingManager>
     public Slider coverageBar;
     public TMP_Text coverageLabel;
 
-    [Range(50f, 100f)] public float finishThreshold = 80f;
+    [Range(50f, 100f)] public float finishThreshold = 50f;
 
     private void Start()
     {
